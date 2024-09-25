@@ -1,12 +1,30 @@
-console.log('Hello!');
+let detteBildet = 0;
+  // Elementene vi trenger fra HTML
+let alleBilder = document.querySelectorAll(".karusell img");
+   
+function visBilde(imageIndex) {}
 
-let imagedisplay = document.querySelector(image.html)
+function flyttBilde(offset) {
 
-let detteBildet = i
+    // hvilket bilde er vi på nå - detteBildet
 
+    // Regn ut hvilket bilde som blir neste
 
-function imagepage ()
-{
+    let nyBildeIndex = detteBildet + offset;
+
+alleBilder.forEach((image, index) => {
+if (index === nyBildeIndex) {
+// Fjern current-image classen fra nåværende bilde
+image.className = "current-image";
+}
+else {
+   // Legg til current-image på det nye bild
+image.className = "";
+}
+});
 }
 
-menytrypp.addEventListener("click", imagepage)
+
+console.log(alleBilder);
+flyttBilde(1);
+console.log(alleBilder);

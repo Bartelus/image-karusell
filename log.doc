@@ -34,3 +34,32 @@
     margin-left: 300px;
     transition: ease-in-out 2s;
   }}
+
+
+
+
+  <!-- 
+    <script>
+      document.getElementById('fuglknapp').addEventListener('click', function() {
+          window.location.href = 'image.html';
+      });
+  </script>
+
+<script>
+  document.getElementById('togknapp').addEventListener('click', function() {
+      window.location.href = 'image.html';
+  });
+</script>
+
+
+<script>
+  document.getElementById('lionknapp').addEventListener('click', function() {
+      window.location.href = 'image.html';
+  });
+</script>
+
+<script>
+  document.getElementById('skoknapp').addEventListener('click', function() {
+      window.location.href = 'image.html';
+  });
+</script> -->

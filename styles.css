@@ -5,41 +5,33 @@ body {
 ol {
   margin: 0px;
   padding: 0px;
-  list-style-type: nonce; /* gjør at liste elementer ikke har liste tegn */
+  list-style-type: none; /* gjør at liste elementer ikke har liste tegn */
 }
 
 .karusell {
   position: relative;
-
-}
-
-
-.karusell > div {
-position: absolute;
-width: 100%;
-height: 100%; 
-
+  z-index: 1;
 display: grid;
-grid-template-columns: 1fr 1fr 1fr;
-grid-template-rows: 1fr 1fr 1fr;
 }
+
+
 
 .karusell > ol  {
   display: flex; /* i seg selv setter alt til en horisontal linje */
-  
+   justify-content: center;
   width: 100vw; /* gjør at man bruker hele skjermbredden til display. 
   gjelder hele ol-elementet i dette tilfellet */
-  
+
   overflow: hidden; /* skjuler det som ikke får plass på skjermen */
   
-  
+   
 }
 
 
 .karusell img {
   height: 100vh;
   display: none; 
-  justify-content: center;
+
   
    /* 100vh betyr 100vh av skjermhøyden */
   
@@ -50,6 +42,14 @@ display: unset;
 }
 
 /* id selecting buttons */
+.karusell > div {
+position: absolute;
+width: 100%;
+height: 100%; 
+
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr 1fr;
+}
 
 #nextbutton {
   grid-column: 4 / 4;
@@ -64,9 +64,9 @@ display: unset;
 
 
 #knappegruppe{
-  grid-column: 2 / 3;
   align-self: end;
   justify-content: center;
+  grid-column: 2 / 3;
   grid-row: 4 / 5;
 }
 
@@ -80,7 +80,7 @@ max-height: 200px;
 min-width: 50px;
 max-width: 50px;
 border-color: honeydew;
-border-radius: 300px;
+border-radius: 30px;
 opacity: 100%;
 }
 
