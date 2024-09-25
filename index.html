@@ -15,8 +15,17 @@
     <div class="karusell">
             <!-- kontroll flate -->
 <div>
-<button id="nextbutton" class="navigasjon"> next </button> 
-<button id="previousbutton" class="navigasjon"> back </button>
+<button id="nextbutton" class="navigasjon"> 
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+</svg>
+</button> 
+
+<button id="previousbutton" class="navigasjon"> 
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+    <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" />
+  </svg>  
+ </button>
   
 <!-- knapp knyttet til bilde-->
 <div id="knappegruppe">
@@ -24,6 +33,9 @@
     <button class="bildevalg" id="togknapp"> Tog </button>
     <button class="bildevalg" id="lionknapp"> Løve </button>
     <button class="bildevalg" id="skoknapp"> Sko </button>
+
+
+<!-- 
 
     <script>
       document.getElementById('fuglknapp').addEventListener('click', function() {
@@ -48,20 +60,21 @@
   document.getElementById('skoknapp').addEventListener('click', function() {
       window.location.href = 'image.html';
   });
-</script>
+</script> -->
 
 
-</div>
-</div>
 
 <!-- bildehjul -->
 <ol>
-  <img src="Bilder/fugl.jpg" alt="" />
+  <img class="current-image" src="Bilder/fugl.jpg" alt="" />
   <img src="Bilder/tog.jpg" alt="" />
   <img src="Bilder/lion.jpg" alt="" />
   <img src="Bilder/sko.jpg" alt="" />
 </ol>
-    </div>
+
+</div>
+</div>
+</div>
 
 
 
