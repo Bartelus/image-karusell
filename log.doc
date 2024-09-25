@@ -1,0 +1,36 @@
+
+@media (min-width: 1000px) {
+.karusell > ol { 
+  margin-left: 200px;
+  transition: ease-in-out 2s;
+}
+}
+
+@media (min-width: 1200px) {
+  .karusell > ol { 
+    margin-left: 350px;
+    transition: ease-in-out 2s;
+  }
+}
+
+@media (min-width: 1500px) {
+  .karusell > ol {
+    display: flex;
+    -ms-flex-align: start;
+    position:fixed;
+    width: 50%;
+    height: 50%;
+    margin-left: 0px;
+    transition: ease-in-out 2s;
+    }
+
+    .navigasjon {
+      visibility: hidden;
+    }
+}
+
+@media (min-width: 2000px) {
+  .karusell > ol {
+    margin-left: 300px;
+    transition: ease-in-out 2s;
+  }}
