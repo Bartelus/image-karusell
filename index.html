@@ -7,14 +7,12 @@
     <link rel="stylesheet" href="styles.css" />
     <script type="module" src="script.js"></script>
   </head>
+  
   <body>
-
-
-
     <!-- div-container for å samle div element -->
     <div class="karusell">
             <!-- kontroll flate -->
-<div>
+            <div>
 <button id="nextbutton" class="navigasjon"> 
   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
   <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
@@ -25,7 +23,16 @@
   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
     <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" />
   </svg>  
- </button>
+</button>
+
+<div id="knappegruppe">
+    <button class="bildevalg"> Fugl </button>
+    <button class="bildevalg"> Tog </button>
+    <button class="bildevalg"> Løve </button>
+    <button class="bildevalg"> Sko </button>
+
+</div>
+</div>
 
 <ol>
   <img class="current-image" src="Bilder/fugl.jpg" alt="" />
@@ -35,19 +42,11 @@
 </ol>
   
 <!-- knapp knyttet til bilde-->
-<div id="knappegruppe">
-    <button class="bildevalg" id="fuglknapp"> Fugl </button>
-    <button class="bildevalg" id="togknapp"> Tog </button>
-    <button class="bildevalg" id="lionknapp"> Løve </button>
-    <button class="bildevalg" id="skoknapp"> Sko </button>
+
 
 <!-- bildehjul -->
 
-</div>
-</div>
-</div>
 
-
-
+</div>
   </body>
 </html>

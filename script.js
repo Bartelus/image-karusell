@@ -5,15 +5,29 @@ let alleBilder = document.querySelectorAll(".karusell img");
 function visBilde(imageIndex) {}
 
 function flyttBilde(offset) {
-
-    // hvilket bilde er vi på nå - detteBildet
-
     // Regn ut hvilket bilde som blir neste
+let nyIndex = detteBildet + offset;
+let totalBilder = alleBilder.length - 1;
 
-    let nyBildeIndex = detteBildet + offset;
+// Sørge for at neste bildenummer er et bilde vi har
+if (nyIndex < 0) {
+  //Hvis vi prøver å gå under null, sett til siste bilde
+  detteBildet = totalBilder;
+} else if (nyIndex > totalBilder) {
+  // Hvis vi prvøver å gå til over antall bilder tilgjengelig, gå til start bildet
+  detteBildet = 0;
+} else {
+  // Hvis vi har bildet, gå til bildet
+  detteBildet = nyIndex;
+}
 
+
+
+
+
+    // For hvert bilde element kjør denne blokken med kode
 alleBilder.forEach((image, index) => {
-if (index === nyBildeIndex) {
+if (index === detteBildet) {
 // Fjern current-image classen fra nåværende bilde
 image.className = "current-image";
 }
@@ -25,6 +39,14 @@ image.className = "";
 }
 
 
-console.log(alleBilder);
-flyttBilde(1);
-console.log(alleBilder);
+
+let previousButton = document.querySelector("#previousbutton");
+let nextButton = document.querySelector("#nextbutton");
+
+previousButton.addEventListener("click", () =>
+{flyttBilde(-1);
+})
+
+nextButton.addEventListener("click", () =>
+{flyttBilde(1);
+})
