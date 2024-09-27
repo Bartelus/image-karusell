@@ -22,9 +22,6 @@ if (nyIndex < 0) {
 }
 
 
-
-
-
     // For hvert bilde element kjør denne blokken med kode
 alleBilder.forEach((image, index) => {
 if (index === detteBildet) {
