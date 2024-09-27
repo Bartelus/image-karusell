@@ -6,6 +6,8 @@
 }
 }
 
+bare noe skrift
+
 @media (min-width: 1200px) {
   .karusell > ol { 
     margin-left: 350px;
